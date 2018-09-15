@@ -63,7 +63,7 @@ class MasterViewController: UITableViewController {
 
 
     func fetchLastPosts() {
-        let siteURL = "https://demo.wp-api.org/wp-json/wp/v2"
+        let siteURL = "https://undergroundvampireclub.com/wp-json/wp/v2"
 
         //        var requestParams = Dictionary<String, Any>()
         //        requestParams["page"] = 1

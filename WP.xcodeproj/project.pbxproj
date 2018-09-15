@@ -16,6 +16,15 @@
 		8F5321261EC6127E00CBF049 /* WordPress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5321251EC6127E00CBF049 /* WordPress.framework */; };
 		8F5321271EC6127E00CBF049 /* WordPress.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5321251EC6127E00CBF049 /* WordPress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F76F6931ED42F9B00BC38C4 /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F76F6921ED42F9B00BC38C4 /* String+Convenience.swift */; };
+		BB1EEFE0214D9E99009E6A92 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5320DD1EC6074B00CBF049 /* PostViewController.swift */; };
+		BB1EEFE1214D9E99009E6A92 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5320DB1EC6074B00CBF049 /* MasterViewController.swift */; };
+		BB1EEFE2214D9E99009E6A92 /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F76F6921ED42F9B00BC38C4 /* String+Convenience.swift */; };
+		BB1EEFE3214D9E99009E6A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5320D91EC6074B00CBF049 /* AppDelegate.swift */; };
+		BB1EEFE5214D9E99009E6A92 /* WordPress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5321251EC6127E00CBF049 /* WordPress.framework */; };
+		BB1EEFE7214D9E99009E6A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5320E41EC6074B00CBF049 /* LaunchScreen.storyboard */; };
+		BB1EEFE8214D9E99009E6A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5320E21EC6074B00CBF049 /* Assets.xcassets */; };
+		BB1EEFE9214D9E99009E6A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5320DF1EC6074B00CBF049 /* Main.storyboard */; };
+		BB1EEFEB214D9E99009E6A92 /* WordPress.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5321251EC6127E00CBF049 /* WordPress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +35,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8F5321271EC6127E00CBF049 /* WordPress.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1EEFEA214D9E99009E6A92 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB1EEFEB214D9E99009E6A92 /* WordPress.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +63,8 @@
 		8F5320E71EC6074B00CBF049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F5321251EC6127E00CBF049 /* WordPress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WordPress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F76F6921ED42F9B00BC38C4 /* String+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
+		BB1EEFEF214D9E99009E6A92 /* UVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1EEFF0214D9E9B009E6A92 /* WP copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WP copy-Info.plist"; path = "/Users/nicole/Documents/UVC/WP copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F5321261EC6127E00CBF049 /* WordPress.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1EEFE4214D9E99009E6A92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1EEFE5214D9E99009E6A92 /* WordPress.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +93,7 @@
 				8F5320D81EC6074B00CBF049 /* WP */,
 				8F5320D71EC6074B00CBF049 /* Products */,
 				8F5321181EC60E9B00CBF049 /* Frameworks */,
+				BB1EEFF0214D9E9B009E6A92 /* WP copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				8F5320D61EC6074B00CBF049 /* WP.app */,
+				BB1EEFEF214D9E99009E6A92 /* UVC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +158,24 @@
 			productReference = 8F5320D61EC6074B00CBF049 /* WP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB1EEFDE214D9E99009E6A92 /* UVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1EEFEC214D9E99009E6A92 /* Build configuration list for PBXNativeTarget "UVC" */;
+			buildPhases = (
+				BB1EEFDF214D9E99009E6A92 /* Sources */,
+				BB1EEFE4214D9E99009E6A92 /* Frameworks */,
+				BB1EEFE6214D9E99009E6A92 /* Resources */,
+				BB1EEFEA214D9E99009E6A92 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UVC;
+			productName = WP;
+			productReference = BB1EEFEF214D9E99009E6A92 /* UVC.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +192,9 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
+					BB1EEFDE214D9E99009E6A92 = {
+						DevelopmentTeam = 977VW2JR38;
+					};
 				};
 			};
 			buildConfigurationList = 8F5320D11EC6074B00CBF049 /* Build configuration list for PBXProject "WP" */;
@@ -157,6 +210,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BB1EEFDE214D9E99009E6A92 /* UVC */,
 				8F5320D51EC6074B00CBF049 /* WP */,
 			);
 		};
@@ -173,6 +227,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB1EEFE6214D9E99009E6A92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1EEFE7214D9E99009E6A92 /* LaunchScreen.storyboard in Resources */,
+				BB1EEFE8214D9E99009E6A92 /* Assets.xcassets in Resources */,
+				BB1EEFE9214D9E99009E6A92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -184,6 +248,17 @@
 				8F5320DC1EC6074B00CBF049 /* MasterViewController.swift in Sources */,
 				8F76F6931ED42F9B00BC38C4 /* String+Convenience.swift in Sources */,
 				8F5320DA1EC6074B00CBF049 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1EEFDF214D9E99009E6A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1EEFE0214D9E99009E6A92 /* PostViewController.swift in Sources */,
+				BB1EEFE1214D9E99009E6A92 /* MasterViewController.swift in Sources */,
+				BB1EEFE2214D9E99009E6A92 /* String+Convenience.swift in Sources */,
+				BB1EEFE3214D9E99009E6A92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +398,7 @@
 				DEVELOPMENT_TEAM = 977VW2JR38;
 				INFOPLIST_FILE = WP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alpeslog.WP;
+				PRODUCT_BUNDLE_IDENTIFIER = underground.vampire.club;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -337,7 +412,35 @@
 				DEVELOPMENT_TEAM = 977VW2JR38;
 				INFOPLIST_FILE = WP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alpeslog.WP;
+				PRODUCT_BUNDLE_IDENTIFIER = underground.vampire.club;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		BB1EEFED214D9E99009E6A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 977VW2JR38;
+				INFOPLIST_FILE = "WP copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = underground.vampire.club;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		BB1EEFEE214D9E99009E6A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 977VW2JR38;
+				INFOPLIST_FILE = "WP copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = underground.vampire.club;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -361,6 +464,15 @@
 			buildConfigurations = (
 				8F5320EB1EC6074B00CBF049 /* Debug */,
 				8F5320EC1EC6074B00CBF049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1EEFEC214D9E99009E6A92 /* Build configuration list for PBXNativeTarget "UVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1EEFED214D9E99009E6A92 /* Debug */,
+				BB1EEFEE214D9E99009E6A92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
