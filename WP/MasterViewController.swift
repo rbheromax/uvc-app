@@ -29,7 +29,7 @@ class MasterViewController: UITableViewController {
             // Do any additional setup after loading the view.
             let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
             imageView.contentMode = .scaleAspectFit
-            let image = UIImage(named: "logo")
+            let image = UIImage(named: "AppIcon")
             imageView.image = image
             navigationItem.titleView = imageView
             
