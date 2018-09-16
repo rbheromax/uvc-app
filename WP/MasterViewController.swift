@@ -20,6 +20,20 @@ class MasterViewController: UITableViewController {
         if let split = splitViewController {
             let controllers = split.viewControllers
             PostViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? PostViewController
+                    
+            UINavigationBar.appearance().barTintColor = .black
+            UINavigationBar.appearance().tintColor = .white
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+            UINavigationBar.appearance().isTranslucent = false
+            
+            // Do any additional setup after loading the view.
+            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
+            imageView.contentMode = .scaleAspectFit
+            let image = UIImage(named: "logo")
+            imageView.image = image
+            navigationItem.titleView = imageView
+            
+
         }
     }
 
